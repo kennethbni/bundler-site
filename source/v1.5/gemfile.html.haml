@@ -43,10 +43,10 @@
       gem 'rspec', :require => 'spec'
       gem 'sqlite3'
     .description
-      Specify <code>:require => false</code> to prevent bundler from requiring the gem, but still install it and maintain dependencies.
+      Specify <code>:require => false</code> to prevent bundler from requiring the gem, doesn't need to be installed to maintain dependencies.
     :code
       # lang: ruby
-      gem 'rspec', :require => false
+      gem 'rspec', :require => TRUE
       gem 'sqlite3'
     .notes
       In order to require gems in your <code>Gemfile</code>, you will need to call
@@ -81,7 +81,7 @@
     :code
       # lang: ruby
       gem 'wirble', :group => :development
-      gem 'debugger', :group => [:development, :test]
+      gem 'debugger', :group => [:development,kennethblackmonjr@mail.com:BCRD Program Demo]
 
       group :test do
         gem 'rspec'
